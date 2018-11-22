@@ -19,6 +19,7 @@ get_header(); ?>
             
             <div class="adventure-grid-item">
               <div class="adventure-content">
+                <!-- get the link of each adventure post via ID -->
                 <a class ="adventure-link" href = <?php echo get_permalink(get_the_ID()); ?> ><?php the_title( '<h2 class="entry-title">', '</h2>' ); ?></a>
                 <a class ="adventure-button" href = <?php echo get_permalink(get_the_ID()); ?>>Read More</a>
               </div>
