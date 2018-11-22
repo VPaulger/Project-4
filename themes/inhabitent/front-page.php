@@ -25,10 +25,12 @@ get_header(); ?>
             'taxonomy' => 'productcat'
           ));
 
+          // for each category return the category link via the home url, the taxonomy name and category name
           foreach( $categories as $category ) {
             $categorylink = home_url('/') . $category->taxonomy . '/' . $category->name;?>
 
             <div class ="product-type-wrapper">
+              <!-- return an image via the link related to each product category and set the text value to the name of the product category -->
               <img src =<?php echo get_template_directory_uri()."/inhabitent_assets/images/product-type-icons/$category->slug.svg"?> alt="<?php echo $category->name?>">
               <p><?php echo $category->description ?></p>
               <p>
@@ -45,6 +47,7 @@ get_header(); ?>
         <h2>Inhabitent Journal</h2>
         <div class ="journal-wrapper"><?php
 
+          //set the number of posts limit to 3 from the post type adventure
           $args = array(
             'numberposts' => 3,
             'post_type'   => 'Journal'
@@ -52,6 +55,7 @@ get_header(); ?>
 
           $journals = get_posts( $args ); ?>
           <ul><?php 
+              // for each journal return the link and the image via custom feild group
               foreach( $journals as $journal ) {
               $journallink = get_permalink($journal->ID);
               $post_image = CFS()->get( 'image' , $journal->ID ); ?>
@@ -64,12 +68,15 @@ get_header(); ?>
                 <span>
                   <span class ="posted-date">
                     <time>
+                      <!-- echo mysql post date -->
                       <time><?php echo mysql2date('j F, Y', $journal->post_date); ?></time>
                     </time>
                   </span>
+                  <!-- return the number of comments for each journal post -->
                   <?php echo $journal->comment_count?> Comment<?php echo ($journal->comment_count == 1) ? "" : "s" ?>
                 </span>
                 <h3 class ="journal-title">
+                  <!-- echo the jounal link for each journal entry and set the link text to the journal post title -->
                   <a href = <?php echo "$journallink" ?> ><?php echo $journal->post_title ?></a>
                 </h3> 
                 </div>
@@ -86,18 +93,20 @@ get_header(); ?>
         <h2>Latest Adventures</h2>
         <ul><?php
 
+          //set the number of posts limit to 4 from the post type adventure
           $args = array(
           'numberposts' => 4,
           'post_type'   => 'Adventure'
           );  
 
+          // get the posts from journal taxonomy
           $adventures = get_posts( $args ); 
+          //get the url of the adventure page
           $adventurehomelink = home_url('/') . 'adventure/';
           foreach( $adventures as $adventure ) {
-            $count = 0;
+            //return the link for each adventure post and the image for each post
             $adventurelink = get_permalink($adventure->ID);
-            $post_image = CFS()->get( 'image' , $adventure->ID );
-            $count++;?>
+            $post_image = CFS()->get( 'image' , $adventure->ID );?>
 
             <li>
               <div class ="adventure-content-container">
@@ -106,6 +115,7 @@ get_header(); ?>
                   <h3 class ="adventure-title">
                     <a href = <?php echo "$adventurelink" ?> ><?php echo $adventure->post_title ?></a>
                   </h3>
+                  <!-- create a button via the link related to each post -->
                   <a class ="adventure-button" href = <?php echo "$adventurelink" ?>>Read More</a>
                 </div>
               </div>
@@ -114,6 +124,7 @@ get_header(); ?>
           } ?>
         </ul>
 
+        <!-- create a link to adventure page via the adventure page url -->
         <p class ="more-adventures">
           <a href = <?php echo "$adventurehomelink" ?>> More Adventures</a>
         </p>
