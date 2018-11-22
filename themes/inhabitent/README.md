@@ -29,7 +29,7 @@ Project Outcome
 Project Difficulties
 - very slow process to undestand the components of wordpress core and implement php programing.
 - eventually learned proper taxonomies and wordpress functions to implement inhabitent site.
-- experienced equipment failure near project deadline and was delayed. as a result was unable to complete styling for 4 pages including the main journal page, the individual journal pages, the individual adventure pages and find us page. physically did not have the nessecary time to fully complete project despite 2 day extension. without equipment failure would have most definitely been able to finish styling.
+- experienced equipment failure near project deadline and was delayed. as a result was unable to complete styling some pages including the main journal page, the individual journal pages, the individual adventure pages, search page, 404 page and find us page. physically did not have the nessecary time to fully complete project despite 2 day extension. without equipment failure would have most definitely been able to finish styling.
 - found it quite innificient to work with premade scss stylesheets as there were many existing styles that I was unfamiliar with. this caused alot of restyling and a lack of organization. in future would prefer premade stylesheets without any premade code. this would aid with accurate organization and efficient modularity.
 
 Project Conclusion
