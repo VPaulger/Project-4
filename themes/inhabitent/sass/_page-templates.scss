@@ -1,0 +1,364 @@
+/*--------------------------------------------------------------
+# Page Templates
+--------------------------------------------------------------*/
+
+/* Front page */
+
+//home page styling
+.home-hero {
+  align-items: center;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0.4) 100%
+    ),
+    #969696 url('http://localhost/wordpress/wp-content/themes/inhabitent/inhabitent_assets/images/home-hero.jpg') no-repeat center top;
+  background-size: cover, cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  margin-bottom: 3rem;
+
+  img {
+    height: 275px;
+    width: 275px;
+  }
+}
+
+//about page styling
+.about-hero {
+  align-items: center;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0.4) 100%
+    ),
+    #969696 url('http://localhost/wordpress/wp-content/themes/inhabitent/inhabitent_assets/images/about-hero.jpg')
+    no-repeat center bottom;
+  background-size: cover, cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  
+  h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+  }
+}
+
+//front-page product category styling
+.product-type-container {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.product-info-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 8.5%;
+  margin-right: 8.5%;
+  align-items: center;
+
+  h2 {
+    color: #2f1339;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    line-height: 1.25;
+    letter-spacing: 2px;
+    font-weight: 400;
+    margin-bottom: 3.75rem;
+  }
+}
+.product-type-wrapper {
+  flex: 0 1 23.5%;
+  max-width: 23.5%;
+  border: 1px solid #e1e1e1;
+  border-top-width: 5px;
+  padding: 0.75em;
+
+  &:hover {
+    border-color: #d99054;
+  }
+
+  p {
+    font-family: $font__code;
+    color: #404040;
+  }
+
+  img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .button {
+    color: #ffffff;
+    font-family: $font__main;
+    font-size: 0.9rem;
+    background: #248a83;
+    line-height: 1;
+    padding: .75rem 1.5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  .button:hover {
+    color: #ffffff;
+    background-color: #19625d;
+  }
+}
+
+//front-page journal styling
+.journal-entries {
+  display: flex;
+  flex-direction: column;
+  margin-left: 8.5%;
+  margin-right: 8.5%;
+  align-items: center;
+  margin-bottom: 3rem;
+
+  .journal-wrapper {
+    padding-top: 0rem;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+
+  h2 {
+    color: #2f1339;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    line-height: 1.25;
+    letter-spacing: 2px;
+    font-weight: 400;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-left: 0;
+    list-style-type: none;
+  }
+
+  li {
+    position: relative;
+    border: 1px solid #e1e1e1;
+    flex: 0 1 32%;
+  }
+
+
+  .journal-pic img{
+    position: absolute;
+    transform: translate(-50%, -52%);
+    top: 50%;
+    left: 50%;
+    max-height: 300px;
+    max-width: none;
+  }
+}
+
+.journal-pic-container {
+  background-color: #e1e1e1;
+  overflow: hidden;
+}
+
+.journal-info-container {
+  font-family: $font__code;
+  padding: 0.75rem;
+}
+
+.journal-title {
+  margin-bottom: 3.75rem;
+  margin-top: 0;
+  font-size: 1.3rem;
+
+  a {
+    font-family: $font__pre;
+    color: $color__link;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+    &:hover {
+      color: #2f1339;
+      text-decoration: none;
+    }
+  }
+}
+
+.journal-entry-button{
+  position: absolute;
+  border: 1px solid #000000;
+  color: #000000;
+  bottom: 0.75rem;
+  left: 0.75rem;
+  font-family: $font__main;
+  font-size: 0.9rem;
+  padding: 0.75rem 1.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  
+  &:hover {
+    background-color: $color__link;
+    border: 1px solid $color__link;
+    color: #FFFFFF;
+  }
+}
+
+//front-page adventure styling
+.adventure-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 8.5%;
+  margin-right: 8.5%;
+  align-items: center;
+  margin-bottom: 3rem;
+
+  h2{
+    color: #2f1339;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    line-height: 1.25;
+    letter-spacing: 2px;
+    font-weight: 400;
+    margin-bottom: 2.75rem;
+  }
+ 
+  ul {
+    width: 100%;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px 20px;
+    margin-left: 0;
+    padding-left: 0;
+    list-style-type: none;
+  }
+
+  li {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    line-height: 1;
+
+    &:first-child {
+      grid-column: 1/span 2;
+      grid-row: 1/span 2;
+      font-size: 2.8rem;
+    }
+
+    &:nth-child(2) {
+      grid-column: 3/span 2;
+      grid-row: 1/span 1;
+      font-size: 2.2rem;
+    }
+
+    &:nth-child(3) {
+      font-size: 1.4rem;
+    }
+
+    &:nth-child(4) {
+      font-size: 1.4rem;
+    }
+  }
+
+  .adventure-content-container {
+    img {
+      position: absolute;
+      max-height: 620px;
+      max-width: none;
+      left: 50%;    
+      top: 75%;
+      transform: translate(-50%, -75%);
+      background:rgba(0,0,0,.35);   
+    }
+    
+    &:after {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      z-index: 1; 
+      background: rgba(0,0,0,.35);
+      content: ""; 
+    }
+  }
+
+.adventure-info {
+  margin: 1.5rem;
+  position: absolute;
+  z-index: 2;
+  text-decoration: none;
+
+  .adventure-button {
+    font-size: .9rem;
+  }
+}
+
+.adventure-title {
+  margin-top: 24px;
+  color: #FFFFFF;
+  font-family: $font__code;
+  font-weight: normal;    
+  text-decoration: none;    
+  letter-spacing: 2px;
+  margin-top: 24px;   
+  }
+
+  a {
+    color: #FFFFFF;
+    text-decoration: none;
+
+    &:hover {
+      color: #f0e4d1;
+      text-decoration: none;
+    } 
+  }
+}
+
+.more-adventures {
+  width: 21%;
+  color: #FFFFFF;
+  background: #248a83;
+  border: none;
+  padding: 1rem 1.5rem;  
+  font-family: $font__main;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 1;
+  align-self: flex-start;
+  text-align: center;
+  font-size: 1.2rem;
+
+  &:hover {
+    color: #FFFFFF;
+    background: #19625d;
+  }
+}
+
+.adventure-box {
+  display: flex;
+  flex-direction: column;
+  margin-left: 8.5%;
+  margin-right: 8.5%;
+  align-items: center;
+  position: relative;
+  padding-top: 2rem;
+}
+
+.adventure-hero {
+  width: 100%;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}

@@ -1,0 +1,94 @@
+header {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  height: 49px;
+  width: 100%;
+  border-bottom: 1px solid #e1e1e1;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 33px;
+    width: 100%;
+    margin-left: 8.5%;
+    margin-right: 8.5%;
+  }  
+
+  .logo {
+    height: 33px;
+    width: 50px;
+  }
+
+  .header-title {
+    background-image: url("http://localhost/wordpress/wp-content/themes/inhabitent/inhabitent_assets/images/logos/inhabitent-logo-tent.svg");
+    background-size: 50px 33px;
+    height: 33px;
+    margin: 0;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    width: 50px;
+  }
+
+  i {
+    padding-top: .53rem;
+    padding-left: 1.5rem;
+  }
+}
+
+.reverse-header {
+  border-bottom: none;
+
+  h1 {
+    background-image: url("http://localhost/wordpress/wp-content/themes/inhabitent/inhabitent_assets/images/logos/inhabitent-logo-tent-white.svg");
+  }
+  a {
+    color: #FFFFFF;
+  }
+
+  a:visited {
+    color: #FFFFFF;
+  } 
+
+  i {
+    color: #FFFFFF;
+    padding-top: .53rem;
+    padding-left: 1.5rem;
+  }
+}
+
+.scroll-header {
+  background-color: hsla(0,0%,100%,.85);
+  border-bottom: 1px solid #e1e1e1;
+  padding: .5rem 0;
+  position: fixed;
+  z-index: 3;
+  transition: top .5s linear;
+
+  .header-title {
+    background-image: url("http://localhost/wordpress/wp-content/themes/inhabitent/inhabitent_assets/images/logos/inhabitent-logo-tent.svg");
+  }
+
+  a {
+    color: #248a83;
+  }
+
+  a:visited {
+    color: #248a83;
+  } 
+
+  i {
+    color: #248a83;
+    padding-top: .53rem;
+    padding-left: 1.5rem;
+  }
+}
+
+.header-search .search-toggle {
+  color: #248a83;
+  float: left;
+  padding-top: .33rem;
+}
+

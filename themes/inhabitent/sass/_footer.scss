@@ -1,0 +1,70 @@
+footer {
+
+}
+
+.footer-block {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 8.5%;
+  margin-right: 8.5%;
+}
+
+#footer-widget-area {
+  display: flex;
+  height: 100%;
+}
+
+#colophon {
+ background-image: url("http://localhost/wordpress/wp-content/themes/inhabitent/inhabitent_assets/images/dark-wood@2x.png");
+ background-size: 512px 512px;
+
+ i {
+  color: white;
+ }
+}
+
+h4 {
+ color: #d99054;
+ font-size: 1.2rem;
+}
+
+h5 {
+ color: white;
+ font-weight: 300;
+ font-size: 1rem;
+ font-family: $font__code; 
+
+ span {
+   font-weight: 900;
+ }
+}
+
+#footer-widget-area {
+  width: 25%;
+  margin-top: 3rem;
+}
+
+.contact-info {
+  width: 25%;
+  margin-top: 3rem;
+}
+
+.empty-footer-block {
+  width: 25%;
+  margin-top: 3rem;
+}
+
+.footer-logo {
+  width: 25%;
+  margin-top: 4.33rem;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+
+  h5 {
+    font-family: $font__main;
+    text-transform: uppercase;
+  }
+}
