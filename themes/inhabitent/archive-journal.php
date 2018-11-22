@@ -15,6 +15,7 @@ get_header(); ?>
         THIS IS THE JOURNAL PAGE!
         <?php while ( have_posts() ) : the_post(); ?>
 
+        <!-- return content via the external content-single-jounal file -->
         <?php get_template_part( 'template-parts/content', 'single-journal' ); ?>
 
         <?php the_post_navigation(); ?>
