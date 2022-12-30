@@ -4,7 +4,7 @@
   "description": "A starter theme for RED students, based on Underscores.",
   "dependencies": {},
   "devDependencies": {
-    "@babel/core": "^7.1.2",
+    "@babel/core": "^7.20.7",
     "@babel/preset-env": "^7.1.0",
     "browser-sync": "^2.23.6",
     "gulp": "^4.0.0",
